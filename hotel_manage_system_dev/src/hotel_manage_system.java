@@ -3,6 +3,7 @@ import javax.swing.*;
 public class hotel_manage_system extends JFrame {
 
     hotel_manage_system(){
+        int i;
         setBounds(100, 100, 1250, 565);
         setLayout(null);
 
