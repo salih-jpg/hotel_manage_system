@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de073367-dfd2-4963-9c1d-8697dd23335d" name="Changes" comment="text">
+      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_manage_system_dev/src/hotel_manage_system.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/hotel_manage_system.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="text" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,7 +72,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="text" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -95,5 +102,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="text" />
     <option name="LAST_COMMIT_MESSAGE" value="text" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hotel_manage_system_dev/src/Login.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
