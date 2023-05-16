@@ -1,7 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class hotel_manage_system extends JFrame {
+public class hotel_manage_system extends JFrame implements ActionListener {
 
     hotel_manage_system(){
         setBounds(100, 100, 1250, 565);
@@ -17,30 +19,44 @@ public class hotel_manage_system extends JFrame {
         text.setForeground(Color.WHITE);
         text.setFont(new Font("serif",Font.PLAIN,50));
         img.add(text);
+        JLabel text2 = new JLabel("ACME");
+        text2.setBounds(150, 350, 1000, 90);
+        text2.setForeground(Color.RED);
+        text2.setFont(new Font("serif",Font.PLAIN,50));
+        img.add(text2);
 
         JButton next = new JButton("Next");
         next.setBounds(1150, 450, 150, 50);
         next.setBackground(Color.WHITE);
         next.setForeground(Color.BLACK);
         next.setFont(new Font("serif",Font.PLAIN,24));
+        next.addActionListener(this);
         img.add(next);
 
         setVisible(true);
 
         while (true) {
             text.setVisible(true);
+            text2.setVisible(true);
             try {
                 Thread.sleep(500);
             }catch (Exception e){
                 e.printStackTrace();
             }
             text.setVisible(false);
+            text2.setVisible(false);
             try {
                 Thread.sleep(500);
             }catch (Exception e){
                 e.printStackTrace();
             }
         }
+
+    }
+
+    public void actionPerformed(ActionEvent ae){
+        setVisible(false);
+        new Login();
 
     }
 

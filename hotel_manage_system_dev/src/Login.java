@@ -7,6 +7,12 @@ public class Login extends JFrame {
 
         setLayout(null);
 
+        JLabel text = new JLabel("ACME H.M.S");
+        text.setBounds(20, 200, 1000, 90);
+        text.setForeground(Color.BLACK);
+        text.setFont(new Font("serif",Font.PLAIN,24));
+        add(text);
+
         JLabel user = new JLabel("Usurname");
         user.setBounds(40, 70, 100, 30);
         add(user);
@@ -40,7 +46,7 @@ public class Login extends JFrame {
         Image i2 =i1.getImage().getScaledInstance(200, 200, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel img2 = new JLabel(i3);
-        img2.setBounds(350, 350, 200, 200);
+        img2.setBounds(350, 10, 200, 200);
         add(img2);
 
 
