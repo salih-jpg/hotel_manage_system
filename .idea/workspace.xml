@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de073367-dfd2-4963-9c1d-8697dd23335d" name="Changes" comment="Login Class">
-      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Dashboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Conn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_manage_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel_manage_system_dev/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_manage_system_dev/src/hotel_manage_system.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/hotel_manage_system.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_manage_system_dev/src/conn.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hotel_manage_system/hotel_manage_system.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hotel_manage_system/hotel_manage_system.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,19 +34,28 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Pe8BbBOwRsuelG16AXYgq7A8om" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Developer/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
+    ]
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
