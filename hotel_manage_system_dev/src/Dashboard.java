@@ -36,6 +36,7 @@ public class Dashboard extends JFrame {
         bar.add(admin);
 
         JMenuItem AddEmp = new JMenuItem("Add Employee");
+
         admin.add(AddEmp);
 
         JMenuItem AddRoom = new JMenuItem("Add Room");
