@@ -30,7 +30,7 @@ public class AddEmployee extends  JFrame {
                 int salary = Integer.parseInt(tfsalary.getText());
                 String name = tfname.getText();
                 String email = tfemail.getText();
-                int phoneNumber = Integer.parseInt(tfphone_number.getText());
+                String phoneNumber =tfphone_number.getText();
                 String job = (String)jobs.getSelectedItem();
 
                 String gender = null;
@@ -39,7 +39,17 @@ public class AddEmployee extends  JFrame {
                 }else if (rbfemale.isSelected()){
                     gender = "female";
                 }
+                 try {
+                     Conn conn = new Conn();
 
+                     String querry = "insert into employee values('"+name+"', '"+age+"', '"+salary+"', '"+email+"','"+phoneNumber+"','"+gender+"', '"+job+"')";
+
+                     conn.s.executeUpdate(querry);
+                     JOptionPane.showMessageDialog(null, "Employee added successfully");
+                     setVisible(false);
+                 }catch (Exception ae){
+                     ae.printStackTrace();
+                 }
 
             }
         });
