@@ -1,43 +1,51 @@
+import net.proteanit.sql.DbUtils;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
-import net.proteanit.sql.*;
 
-public class Rooms extends JFrame implements ActionListener {
+public class Customerİnfo extends JFrame implements ActionListener{
     JTable table;
-    Rooms(){
+    Customerİnfo(){
         setBounds(300,200,1050,600);
         setVisible(true);
         setLayout(null);
         getContentPane().setBackground(Color.WHITE);
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/eight.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(600,600,Image.SCALE_DEFAULT);
-        ImageIcon i3 = new ImageIcon(i2);
-        JLabel image = new JLabel(i3);
-        image.setBounds(500,0,600,600);
-        add(image);
 
-        JLabel a1 = new JLabel("Room Number");
+        JLabel a1 = new JLabel("İD Type");
         a1.setBounds(10,10,100,20);
         add(a1);
 
-        JLabel a2 = new JLabel("Cleaning Status");
-        a2.setBounds(100,10,100,20);
+        JLabel a2 = new JLabel("İD");
+        a2.setBounds(150,10,100,20);
         add(a2);
 
-        JLabel a3 = new JLabel("Status");
-        a3.setBounds(200,10,100,20);
+        JLabel a3 = new JLabel("Name");
+        a3.setBounds(300,10,100,20);
         add(a3);
 
-        JLabel a4 = new JLabel("Price");
-        a4.setBounds(320,10,100,20);
+        JLabel a4 = new JLabel("Gender");
+        a4.setBounds(400,10,100,20);
         add(a4);
 
-        JLabel a5 = new JLabel("Bed Type");
-        a5.setBounds(420,10,100,20);
+        JLabel a5 = new JLabel("Country");
+        a5.setBounds(520,10,100,20);
         add(a5);
+
+        JLabel a6 = new JLabel("Age");
+        a6.setBounds(640,10,100,20);
+        add(a6);
+
+        JLabel a7 = new JLabel("Checkin Time");
+        a7.setBounds(750,10,100,20);
+        add(a7);
+
+        JLabel a8 = new JLabel("Deposit");
+        a8.setBounds(900,10,100,20);
+        add(a8);
+
 
         JButton back = new JButton("Back");
         back.setBackground(Color.BLACK);
@@ -54,13 +62,13 @@ public class Rooms extends JFrame implements ActionListener {
 
 
         table = new JTable();
-        table.setBounds(0,40,500,400);
+        table.setBounds(0,40,1000,400);
 
         add(table);
 
         try {
             Conn conn = new Conn();
-            ResultSet rs = conn.s.executeQuery("select * from room");
+            ResultSet rs = conn.s.executeQuery("select * from customer");
             table.setModel(DbUtils.resultSetToTableModel(rs));
         }catch (Exception e){
             e.printStackTrace();
