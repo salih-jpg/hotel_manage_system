@@ -34,22 +34,28 @@ public class AddEmployee extends  JFrame {
                 String job = (String)jobs.getSelectedItem();
 
                 String gender = null;
-                if(rbmale.isSelected()){
-                    gender = "male";
-                }else if (rbfemale.isSelected()){
-                    gender = "female";
+                if( age < 18){
+                    JOptionPane.showMessageDialog(null, "Error!Please enter valid age for driver.");
+                } else if (age >= 75) {
+                    JOptionPane.showMessageDialog(null, "Error!Please enter valid age for driver.");
+                }else {
+                    if (rbmale.isSelected()) {
+                        gender = "male";
+                    } else if (rbfemale.isSelected()) {
+                        gender = "female";
+                    }
+                    try {
+                        Conn conn = new Conn();
+
+                        String querry = "insert into employee values('" + name + "', '" + age + "', '" + salary + "', '" + email + "','" + phoneNumber + "','" + gender + "', '" + job + "')";
+
+                        conn.s.executeUpdate(querry);
+                        JOptionPane.showMessageDialog(null, "Employee added successfully");
+                        setVisible(false);
+                    } catch (Exception ae) {
+                        ae.printStackTrace();
+                    }
                 }
-                 try {
-                     Conn conn = new Conn();
-
-                     String querry = "insert into employee values('"+name+"', '"+age+"', '"+salary+"', '"+email+"','"+phoneNumber+"','"+gender+"', '"+job+"')";
-
-                     conn.s.executeUpdate(querry);
-                     JOptionPane.showMessageDialog(null, "Employee added successfully");
-                     setVisible(false);
-                 }catch (Exception ae){
-                     ae.printStackTrace();
-                 }
 
             }
         });
