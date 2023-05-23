@@ -118,6 +118,13 @@ public class Reception extends JFrame implements ActionListener {
         searchRoom.setBounds(10,430,200,30);
         searchRoom.setBackground(Color.BLACK);
         searchRoom.setForeground(Color.WHITE);
+        searchRoom.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new SearchRoom();
+                setVisible(false);
+            }
+        });
         add(searchRoom);
 
         JButton logout  = new  JButton("Logout");
