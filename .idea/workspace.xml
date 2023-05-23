@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de073367-dfd2-4963-9c1d-8697dd23335d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddRooms.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddRooms.java" afterDir="false" />
+    <list default="true" id="de073367-dfd2-4963-9c1d-8697dd23335d" name="Changes" comment="Login Class ve Dashboard class">
+      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddDriver.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Reception.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Rooms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddEmployee.form" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddEmployee.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_manage_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddRooms.form" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddRooms.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddRooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddRooms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_manage_system_dev/src/Conn.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Conn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel_manage_system_dev/src/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Dashboard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="add_driver_class" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,24 +46,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;166&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;283&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Developer/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "166",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "283",
+    "last_opened_file_path": "C:/Deneme/rs2xml.jar",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;PLAIN_TEXT&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
     ]
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -109,7 +115,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Login_class_devamı" />
+                        <option value="Deneme" />
                       </list>
                     </value>
                   </entry>
@@ -140,5 +146,19 @@
     <MESSAGE value="text" />
     <MESSAGE value="Login Class" />
     <option name="LAST_COMMIT_MESSAGE" value="Login Class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassNotFoundException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLException" package="java.sql" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

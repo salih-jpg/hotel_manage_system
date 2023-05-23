@@ -1,7 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 
-public class Dashboard extends JFrame {
+public class Dashboard extends JFrame implements ActionListener {
+    JMenuItem AddRoom,AddDri,AddEmp,reception;
     Dashboard(){
         setBounds(0, 0, 1550, 1000);
 
@@ -28,27 +32,51 @@ public class Dashboard extends JFrame {
         hotel.setForeground(Color.BLACK);
         bar.add(hotel);
 
-        JMenuItem reception = new JMenuItem("Reception");
+        reception = new JMenuItem("Reception");
         hotel.add(reception);
+        reception.addActionListener(this);
 
         JMenu admin = new JMenu("Admin");
         admin.setForeground(Color.BLACK);
         bar.add(admin);
 
-        JMenuItem AddEmp = new JMenuItem("Add Employee");
+        AddEmp = new JMenuItem("Add Employee");
+        AddEmp.addActionListener(this);
 
         admin.add(AddEmp);
 
-        JMenuItem AddRoom = new JMenuItem("Add Room");
+        AddRoom = new JMenuItem("Add Room");
         admin.add(AddRoom);
+        AddRoom.addActionListener(this);
 
-        JMenuItem AddDri = new JMenuItem("Add Driver");
+        AddDri = new JMenuItem("Add Driver");
         admin.add(AddDri);
+        AddDri.addActionListener(this);
 
 
         setVisible(true);
     }
     public static void main(String[] arcgs){
         new Dashboard();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource() == AddEmp){
+            new AddEmployee();
+           setVisible(false);
+
+        } else if (e.getSource() == AddRoom) {
+            new AddRooms();
+            setVisible(false);
+        } else if (e.getSource() == AddDri) {
+            new AddDriver();
+            setVisible(false);
+
+        } else if (e.getSource() == reception) {
+            new  Reception();
+            setVisible(false);
+        }
+
     }
 }

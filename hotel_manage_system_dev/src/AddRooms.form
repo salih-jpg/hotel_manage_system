@@ -71,7 +71,9 @@
       </component>
       <component id="ebb53" class="javax.swing.JButton" binding="addRoomButton">
         <constraints>
-          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="101" height="30"/>
+          </grid>
         </constraints>
         <properties>
           <text value="Add Room"/>
@@ -97,19 +99,37 @@
         <constraints>
           <grid row="2" column="4" row-span="1" col-span="5" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <model>
+            <item value="Clean"/>
+            <item value="Unclean"/>
+          </model>
+        </properties>
       </component>
-      <component id="7adcd" class="javax.swing.JComboBox" default-binding="true">
+      <component id="7adcd" class="javax.swing.JComboBox" binding="avaibleCb">
         <constraints>
           <grid row="3" column="4" row-span="1" col-span="5" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <model>
+            <item value="Empty"/>
+            <item value="Full"/>
+          </model>
+        </properties>
       </component>
       <component id="d6392" class="javax.swing.JComboBox" binding="bedTypeCb">
         <constraints>
           <grid row="5" column="4" row-span="1" col-span="5" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <model>
+            <item value="STANDARD"/>
+            <item value="ZIP &amp; LINK"/>
+            <item value="PLATFORM"/>
+            <item value="PANEL"/>
+            <item value="SOFA"/>
+          </model>
+        </properties>
       </component>
     </children>
   </grid>
