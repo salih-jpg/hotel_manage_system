@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de073367-dfd2-4963-9c1d-8697dd23335d" name="Changes" comment="Login Class ve Dashboard class">
-      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Customerİnfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Employeeİnfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Managerİnfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/SearchRoom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/AddCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel_manage_system_dev/src/Reception.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Reception.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_manage_system_dev/src/Rooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_manage_system_dev/src/Rooms.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Deneme2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -104,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684809100336</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Login Class ve Dashboard class">
+      <created>1684848652060</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684848652060</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,7 +120,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Deneme2" />
+                        <option value="search_class" />
                       </list>
                     </value>
                   </entry>
