@@ -131,7 +131,7 @@ public class AddCustomer extends JFrame implements ActionListener {
         back.setBackground(Color.BLACK);
         back.setForeground(Color.WHITE);
         back.setBounds(200,410,120,25);
-        add.addActionListener(this);
+        back.addActionListener(this);
         add(back);
 
         tfDeposit = new JTextField();

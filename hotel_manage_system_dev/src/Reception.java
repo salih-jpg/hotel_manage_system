@@ -42,24 +42,52 @@ public class Reception extends JFrame implements ActionListener {
         department.setBounds(10,110,200,30);
         department.setBackground(Color.BLACK);
         department.setForeground(Color.WHITE);
+        department.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Department();
+                setVisible(false);
+            }
+        });
         add(department);
 
         JButton allEmployees  = new  JButton("AllEmployees");
         allEmployees.setBounds(10,150,200,30);
         allEmployees.setBackground(Color.BLACK);
         allEmployees.setForeground(Color.WHITE);
+        allEmployees.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Employeeİnfo();
+                setVisible(false);
+            }
+        });
         add(allEmployees);
 
         JButton customers  = new  JButton("Customer Info");
         customers.setBounds(10,190,200,30);
         customers.setBackground(Color.BLACK);
         customers.setForeground(Color.WHITE);
+        customers.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Customerİnfo();
+                setVisible(false);
+            }
+        });
         add(customers);
 
         JButton managerInfo  = new  JButton("Manager Info");
         managerInfo.setBounds(10,230,200,30);
         managerInfo.setBackground(Color.BLACK);
         managerInfo.setForeground(Color.WHITE);
+        managerInfo.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Managerİnfo();
+                setVisible(false);
+            }
+        });
         add(managerInfo);
 
         JButton checkout  = new  JButton("Checkout");
@@ -93,7 +121,7 @@ public class Reception extends JFrame implements ActionListener {
         add(searchRoom);
 
         JButton logout  = new  JButton("Logout");
-        logout.setBounds(10,430,200,30);
+        logout.setBounds(10,470,200,30);
         logout.setBackground(Color.BLACK);
         logout.setForeground(Color.WHITE);
         add(logout);
