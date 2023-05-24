@@ -100,12 +100,27 @@ public class Reception extends JFrame implements ActionListener {
         update.setBounds(10,310,200,30);
         update.setBackground(Color.BLACK);
         update.setForeground(Color.WHITE);
+        update.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new UpdateCheck();
+                setVisible(false);
+            }
+        });
         add(update);
 
         JButton updateRoomStatus  = new  JButton("Update Room Status");
         updateRoomStatus.setBounds(10,350,200,30);
         updateRoomStatus.setBackground(Color.BLACK);
         updateRoomStatus.setForeground(Color.WHITE);
+        updateRoomStatus.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new UpdateRoom();
+                setVisible(false);
+            }
+        });
+
         add(updateRoomStatus);
 
         JButton pickup  = new  JButton("Pickup Service");
@@ -131,6 +146,13 @@ public class Reception extends JFrame implements ActionListener {
         logout.setBounds(10,470,200,30);
         logout.setBackground(Color.BLACK);
         logout.setForeground(Color.WHITE);
+        logout.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Dashboard();
+                setVisible(false);
+            }
+        });
         add(logout);
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/fourth.jpg"));
