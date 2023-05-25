@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 public class hotel_manage_system extends JFrame implements ActionListener {
 
     hotel_manage_system(){
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(100, 100, 1250, 565);
         setLayout(null);
 
@@ -19,7 +20,7 @@ public class hotel_manage_system extends JFrame implements ActionListener {
         text.setForeground(Color.WHITE);
         text.setFont(new Font("serif",Font.PLAIN,50));
         img.add(text);
-        JLabel text2 = new JLabel("ACME");
+        JLabel text2 = new JLabel("S.E.B.E");
         text2.setBounds(150, 350, 1000, 90);
         text2.setForeground(Color.RED);
         text2.setFont(new Font("serif",Font.PLAIN,50));

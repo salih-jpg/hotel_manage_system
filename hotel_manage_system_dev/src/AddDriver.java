@@ -15,10 +15,14 @@ public class AddDriver extends JFrame {
     private JTextField textField1;
     private JComboBox ComboBox2;
 
+
+
     public AddDriver(){
         add(panel1);
         setBounds(100, 100, 500, 500);
         setVisible(true);
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
 
         addDriverButton.addActionListener(new ActionListener() {
             @Override
@@ -37,7 +41,9 @@ public class AddDriver extends JFrame {
                     try {
                         Conn conn = new Conn(); String querry = "insert into driver values('" + name_Surname + "', '" + age + "', '" + gender + "', '" + company + "','" + carModel + "','" + Available + "')";
                         conn.s.executeUpdate(querry); JOptionPane.showMessageDialog(null, "Employee added successfully");
-                        setVisible(false); }
+                        setVisible(false);
+                        new Dashboard();
+                        }
                     catch (Exception ae) { ae.printStackTrace(); }
 
                 }
@@ -47,13 +53,12 @@ public class AddDriver extends JFrame {
         cancelButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                new Dashboard();
                 setVisible(false);
             }
         });
     }
 
-    public static void main(String[] args) {
-        new AddDriver();
-    }
+
 
 }

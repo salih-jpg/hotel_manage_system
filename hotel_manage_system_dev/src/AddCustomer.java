@@ -2,12 +2,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.PreparedStatement;
 import java.util.Date;
 import java.sql.ResultSet;
 
 public class AddCustomer extends JFrame implements ActionListener {
     JComboBox comboid;
-    JTextField tfNumber,tfName,tfCountry,tfDeposit;
+    JTextField tfName,tfCountry,tfDeposit;
 
     JRadioButton rMale, rFemale;
 
@@ -45,9 +46,6 @@ public class AddCustomer extends JFrame implements ActionListener {
         idNumber.setFont(new Font("Raleway", Font.PLAIN, 20));
         add(idNumber);
 
-        tfNumber = new JTextField();
-        tfNumber.setBounds(200,120,150,25);
-        add(tfNumber);
 
         JLabel iblName = new JLabel("Name");
         iblName.setBounds(35,160,100,20);
@@ -90,7 +88,7 @@ public class AddCustomer extends JFrame implements ActionListener {
         croom = new Choice();
         try {
            Conn conn = new Conn();
-           String query = "select *from room";
+           String query = "select* from room where available = 'Empty'" ;
           ResultSet rs = conn.s.executeQuery(query);
           while (rs.next()){
 
@@ -152,7 +150,6 @@ public class AddCustomer extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == add){
             String id = (String) comboid.getSelectedItem();
-            int number = Integer.parseInt(tfNumber.getText());
             String name = tfName.getText();
             String gender = null;
             if (rMale.isSelected()){
@@ -167,9 +164,26 @@ public class AddCustomer extends JFrame implements ActionListener {
 
             try {
                 Conn conn = new Conn();
-                String querry = "insert into customer values('" + id + "', '" + number + "', '" + name + "', '" + gender + "', '" + country + "', '" + room + "','" + time + "','" + deposit + "')";
-                String querry2 = "update room set availability = 'Full' where number = '" + room + "'";
-                conn.s.executeUpdate(querry); JOptionPane.showMessageDialog(null, "Customer added successfully");
+                String querry = "insert into customer(id, name, gender, country, room, time, deposit) values (?,?,?,?,?,?,?)";
+                String querry2 = "update room set available = 'Full' where number = '" + room + "'";
+                PreparedStatement statement = conn.c.prepareStatement(querry);
+                statement.setString(1, id);
+                statement.setString(2,name);
+                statement.setString(3, gender);
+                statement.setString(4, country);
+                statement.setString(5, String.valueOf(room));
+                statement.setString(6, time);
+                statement.setString(7, String.valueOf(deposit));
+
+                int affectedRows = statement.executeUpdate();
+                if (affectedRows > 0) {
+                    System.out.println("Veri başarıyla eklendi.");
+                    JOptionPane.showMessageDialog(null, "The Customer added successfully");
+                    conn.s.executeUpdate(querry2);
+                } else {
+                    System.out.println("Veri eklenirken bir hata oluştu.");
+                }
+
                 setVisible(false);
                 new Reception();
             }catch (Exception e1){
@@ -177,6 +191,7 @@ public class AddCustomer extends JFrame implements ActionListener {
             }
 
         } else if (e.getSource() == back) {
+            setVisible(false);
             new Reception();
             
         }

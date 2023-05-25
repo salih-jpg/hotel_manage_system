@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 public class Employeeİnfo extends JFrame implements ActionListener {
     JTable table;
     Employeeİnfo(){
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(300,200,1050,600);
         setVisible(true);
         setLayout(null);

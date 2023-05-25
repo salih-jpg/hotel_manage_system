@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 public class Customerİnfo extends JFrame implements ActionListener{
     JTable table;
     Customerİnfo(){
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(300,200,1050,600);
         setVisible(true);
         setLayout(null);
@@ -34,7 +35,7 @@ public class Customerİnfo extends JFrame implements ActionListener{
         a5.setBounds(520,10,100,20);
         add(a5);
 
-        JLabel a6 = new JLabel("Age");
+        JLabel a6 = new JLabel("Room Number");
         a6.setBounds(640,10,100,20);
         add(a6);
 
