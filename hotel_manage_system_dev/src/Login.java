@@ -12,7 +12,7 @@ public class Login extends JFrame implements ActionListener {
 
     Login(){
 
-
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setBackground(Color.WHITE);
 
         setLayout(null);
@@ -69,9 +69,7 @@ public class Login extends JFrame implements ActionListener {
 
     }
 
-    public static void main(String[] args) {
-        new Login();
-    }
+
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == login){
             String user = username.getText();

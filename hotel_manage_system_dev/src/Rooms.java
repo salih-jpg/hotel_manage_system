@@ -8,6 +8,7 @@ import net.proteanit.sql.*;
 public class Rooms extends JFrame implements ActionListener {
     JTable table;
     Rooms(){
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(300,200,1050,600);
         setVisible(true);
         setLayout(null);

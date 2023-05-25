@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 public class Reception extends JFrame implements ActionListener {
     Reception(){
-
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
 
@@ -96,6 +96,14 @@ public class Reception extends JFrame implements ActionListener {
         checkout.setForeground(Color.WHITE);
         add(checkout);
 
+        checkout.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new CheckOut();
+                setVisible(false);
+            }
+        });
+
         JButton update  = new  JButton("Update Status");
         update.setBounds(10,310,200,30);
         update.setBackground(Color.BLACK);
@@ -127,6 +135,13 @@ public class Reception extends JFrame implements ActionListener {
         pickup.setBounds(10,390,200,30);
         pickup.setBackground(Color.BLACK);
         pickup.setForeground(Color.WHITE);
+        pickup.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Pickup();
+                setVisible(false);
+            }
+        });
         add(pickup);
 
         JButton searchRoom  = new  JButton("Search Room");

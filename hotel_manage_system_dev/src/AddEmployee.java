@@ -4,9 +4,20 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class AddEmployee extends  JFrame {
+    private JPanel AddEmployeePanel;
+    private JComboBox jobs;
+    private JTextField tfemail;
+    private JTextField tfphone_number;
+    private JTextField tfsalary;
 
+    private JTextField tfname;
+    private JTextField tfage;
+    private JRadioButton rbmale;
+    private JRadioButton rbfemale;
+    private JButton submitButton;
+    private JButton cancelBtn;
     AddEmployee(){
-
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/tenth.jpg"));
         Image i2 = i1.getImage().getScaledInstance(450, 450, Image.SCALE_DEFAULT);
         i1.setImage(i2);
@@ -52,6 +63,8 @@ public class AddEmployee extends  JFrame {
                         conn.s.executeUpdate(querry);
                         JOptionPane.showMessageDialog(null, "Employee added successfully");
                         setVisible(false);
+                        new Dashboard();
+
                     } catch (Exception ae) {
                         ae.printStackTrace();
                     }
@@ -59,25 +72,19 @@ public class AddEmployee extends  JFrame {
 
             }
         });
+
+        cancelBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Dashboard();
+                setVisible(false);
+            }
+        });
     }
 
-    private JPanel AddEmployeePanel;
-    private JComboBox jobs;
-    private JTextField tfemail;
-    private JTextField tfphone_number;
-    private JTextField tfsalary;
-
-    private JTextField tfname;
-    private JTextField tfage;
-    private JRadioButton rbmale;
-    private JRadioButton rbfemale;
-    private JButton submitButton;
 
 
 
-    public static void main(String[] args) {
-        new AddEmployee();
-    }
 
 
 }

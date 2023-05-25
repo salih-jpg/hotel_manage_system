@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 public class Department extends JFrame implements ActionListener{
     JTable table;
     Department(){
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(400,200,700,480);
         setVisible(true);
         setLayout(null);

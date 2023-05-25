@@ -12,7 +12,7 @@ public class UpdateCheck extends JFrame implements ActionListener {
     JButton check,update,back;
 
     UpdateCheck(){
-
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(300,200,980,500);
         setVisible(true);
         setLayout(null);

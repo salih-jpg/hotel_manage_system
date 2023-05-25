@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 public class Dashboard extends JFrame implements ActionListener {
     JMenuItem AddRoom,AddDri,AddEmp,reception;
     Dashboard(){
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(0, 0, 1550, 1000);
 
         setLayout(null);
@@ -18,7 +19,7 @@ public class Dashboard extends JFrame implements ActionListener {
         image.setBounds(0, 0, 1550, 1000);
         add(image);
 
-        JLabel text = new JLabel("Acme Corporation welcomes you villain!");
+        JLabel text = new JLabel("S.E.B.E. Corporation welcomes you ");
         text.setBounds(400, 80, 1000, 50);
         text.setFont(new Font("Tahoma",Font.PLAIN, 46));
         text.setForeground(Color.WHITE);

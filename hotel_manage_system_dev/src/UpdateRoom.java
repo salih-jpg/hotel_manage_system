@@ -13,7 +13,7 @@ public class UpdateRoom extends JFrame implements ActionListener {
     JButton check,update,back;
 
     UpdateRoom(){
-
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(300,200,980,450);
         setVisible(true);
         setLayout(null);
